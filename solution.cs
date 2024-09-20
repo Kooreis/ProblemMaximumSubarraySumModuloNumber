@@ -1,5 +1,4 @@
-function maxSubArraySumModulo(arr, n, m) {
-    let prefix = 0;
-    let maxModulo = 0;
-    let sortedPrefix = new Set();
+for (let i = 0; i < n; i++) {
+        prefix = (prefix + arr[i]) % m;
+        maxModulo = Math.max(maxModulo, prefix);
 }
